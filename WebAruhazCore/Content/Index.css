@@ -1,0 +1,45 @@
+﻿body {
+}
+
+.szinez {
+    background-color: grey;
+}
+
+.tavb {
+    margin: 20px 10px 0px 20px;
+}
+
+.tavj {
+    margin: 20px 20px auto 20%;
+    width: auto;
+}
+
+.kerekit {
+    border-radius: 5px;
+}
+
+.magasit {
+    min-height: 500px;
+}
+
+.flauto {
+    margin: auto, 0;
+}
+
+.sidebar {
+    height: 80%;
+}
+
+.torzs {
+    width: 100%;
+}
+
+
+
+.blue{
+    background-color:blue;
+}
+
+.card {
+    margin-top: 30px;
+}

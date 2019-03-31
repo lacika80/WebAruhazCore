@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Index</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="/SiteScripts/SiteScript.js"></script>
+    <link rel="stylesheet" href="SiteScripts/bootstrap-4.3.0-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar-br navbar navbar-dark bg-dark navbar-width-60pc navbar-expand-lg" id="header">
+
+    </nav>
+    <div class="d-flex align-items-center justify-content-center">
+        <div id="Container" class="m-5">
+
+            <div class="container-fluid" style="margin-top:30px">
+                <div class=" tavb col-2 px-4 szinez kerekit bg-dark sticky-top float-left">
+                    <form>
+                        <div class=" list-group align-bottom">
+                            <button type="button" class="list-group-item list-group-item-action active">
+                                gombsor
+                            </button>
+                            @for (int i = 0; i < 10; i++)
+                            {
+                            <button type="button" class="list-group-item list-group-item-action">Kategória: @i</button>
+                            }
+
+                        </div>
+                    </form>
+
+                </div>
+
+                <div class=" bg-dark kerekit d-flex justify-content-around flex-wrap" style="padding-bottom:30px">
+
+                    @foreach (var item in Model.Products)
+                    {
+                    <div class="card" style="width: 25rem; height:30rem">
+
+                        @foreach (var item2 in Model.ProductWithphotos)
+                        {
+                        if (item2.ProdID == item.ProdID)
+                        {
+                        <img class="card-img-top" src="@item2.ImagePath2" alt="Card image cap">
+                        break;
+                        }
+                        }
+                        <div class="card-body">
+                            <h5 class="card-title">@item.ProdName</h5>
+                            <p class="card-text">@item.ProdDescription</p>
+                            <div style="position:absolute; bottom: 0;">
+                                <div class="btn btn-primary float-left" style="float:left; width:10rem; height: 2.5rem;">@item.BrutPrice.ToString().Substring(0, item.BrutPrice.ToString().Length - 6) Ft</div>
+                                <div class="float-right" style="width:2.4rem"></div>
+                                @Html.ActionLink("Részletek", "Item", new { ProdID = item.ProdID}, new { @class = "btn btn-primary", @style ="float:right; width:10rem; height: 2.5rem;float:right"})
+                                @*<a href="#" class="btn btn-primary" style="float:right; width:10rem; height: 2.5rem;float:right">Go somewhere</a>*@
+                            </div>
+                        </div>
+                    </div>
+                    }
+                </div>
+            </div>
+
+        </div>
+        <!--<button onclick="alma()">teszt</button>-->
+    </div>
+    <div id="footer" class="d-flex justify-content-center">
+
+    </div>
+</body>
+</html>

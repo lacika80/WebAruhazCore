@@ -1,0 +1,13 @@
+﻿/*body {
+    background-color:dodgerblue;
+}*/
+.navbar-bgcolor-lightgreen{
+    background-color:chartreuse;
+}
+.navbar-width-60pc {
+    width: 80%;
+    margin: auto;
+}
+.navbar-br{
+    border-radius:10px;
+}

@@ -1,0 +1,72 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\**" />
+    <EmbeddedResource Remove="Migrations\**" />
+    <None Remove="Migrations\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Migrations\20190215083157_teszt3.cs" />
+    <Compile Include="Migrations\20190215083157_teszt3.Designer.cs" />
+    <Compile Include="Migrations\20190305082606_03.05.1.cs" />
+    <Compile Include="Migrations\20190305082606_03.05.1.Designer.cs" />
+    <Compile Include="Migrations\20190325064651_t1.cs" />
+    <Compile Include="Migrations\20190325064651_t1.Designer.cs" />
+    <Compile Include="Migrations\20190329085400_0329.cs" />
+    <Compile Include="Migrations\20190329085400_0329.Designer.cs" />
+    <Compile Include="Migrations\20190329091425_0329.0202.cs" />
+    <Compile Include="Migrations\20190329091425_0329.0202.Designer.cs" />
+    <Compile Include="Migrations\20190329091500_0329.0203.cs" />
+    <Compile Include="Migrations\20190329091500_0329.0203.Designer.cs" />
+    <Compile Include="Migrations\20190329091709_0329.0204.cs" />
+    <Compile Include="Migrations\20190329091709_0329.0204.Designer.cs" />
+    <Compile Include="Migrations\20190329091845_0329.0205.cs" />
+    <Compile Include="Migrations\20190329091845_0329.0205.Designer.cs" />
+    <Compile Include="Migrations\20190329091900_0329.0206.cs" />
+    <Compile Include="Migrations\20190329091900_0329.0206.Designer.cs" />
+    <Compile Include="Migrations\20190329092059_0329.0207.cs" />
+    <Compile Include="Migrations\20190329092059_0329.0207.Designer.cs" />
+    <Compile Include="Migrations\20190329121854_0329.0208.cs" />
+    <Compile Include="Migrations\20190329121854_0329.0208.Designer.cs" />
+    <Compile Include="Migrations\20190329122722_0329.03.cs" />
+    <Compile Include="Migrations\20190329122722_0329.03.Designer.cs" />
+    <Compile Include="Migrations\20190329123522_0329.04.cs" />
+    <Compile Include="Migrations\20190329123522_0329.04.Designer.cs" />
+    <Compile Include="Migrations\20190329125020_0329.05.cs" />
+    <Compile Include="Migrations\20190329125020_0329.05.Designer.cs" />
+    <Compile Include="Migrations\20190329125135_0329.06.cs" />
+    <Compile Include="Migrations\20190329125135_0329.06.Designer.cs" />
+    <Compile Include="Migrations\20190329130114_0329.07.cs" />
+    <Compile Include="Migrations\20190329130114_0329.07.Designer.cs" />
+    <Compile Include="Migrations\20190329130658_0329.08.cs" />
+    <Compile Include="Migrations\20190329130658_0329.08.Designer.cs" />
+    <Compile Include="Migrations\20190329131115_0329.09.cs" />
+    <Compile Include="Migrations\20190329131115_0329.09.Designer.cs" />
+    <Compile Include="Migrations\AruhazContextModelSnapshot.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="8.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="6.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authorization" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="2.2.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Interface\Interfaces.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.EntityFrameworkCore">
+      <HintPath>..\..\..\..\..\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.entityframeworkcore\2.2.0\lib\netstandard2.0\Microsoft.EntityFrameworkCore.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
